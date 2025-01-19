@@ -48,7 +48,7 @@ Several devices will likely be listed.  Below is an example of my SofaBaton to h
 
 The following apply to the event8 and event9 above:
 
-* The /dev/input/event8 is the Consumer Control aspects of the SofaBaton are found in the /dev/input/event8, which provides a linkage to specialized keys like reverse, play, fast-forward, etc.
+* The /dev/input/event8 is the Consumer Control aspects of the SofaBaton, and are linked with the /dev/input/event8, which provides a linkage to specialized keys like reverse, play, fast-forward, etc.
 * The /dev/input/event9 (Sofabaton05666 Keyboard) is where the number keys are registered. In the sofabaton_control.py the design focuses exclusively on the number buttons and the E button.  
 
 
