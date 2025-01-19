@@ -28,10 +28,10 @@ On the Raspberry Pi OS, you can use the Bluetooth pairing UI to add the SofaBato
 In this section, I'm providing directions on how to discover the key presses for a SofaBaton U2.  Technically this process should work with any bluetooth type of remote, but these directions only focus on the SofaBaton U2.
 
 You will need the evtest package.
-'sudo apt install evtest'
+`sudo apt install evtest`
 
 Launch the evtest utility:
-'python3 /usr/lib/python3/dist-packages/evdev/evtest.py'
+`python3 /usr/lib/python3/dist-packages/evdev/evtest.py`
 
 Several devices will likely be listed.  Below is an example of my SofaBaton to help you discover yours.
 
@@ -83,14 +83,14 @@ The following is a list of known codes and their respective device mapping:
 
 # Setup sofabaton_control.py to be a service
 The sofabaton_control.py can be run as a standalone utility from the command line simply by entering:
-'python3 sofabaton_control.py'
+`python3 sofabaton_control.py`
 
 To integrate sofabaton_control.py into the OS to run you will need to tailor the sofabaton_control.py to fit your environment.  You will need to edit the following values:
 COMMAND_FILE	# Point to the location of the file that you want to write key binds to, such as channel.lock on FieldStation42
 REMOTE_DEVICE	# See the section, "Discovering Bluetooth Button Press Codes" and supply the /dev/input/eventx number that is found on your system.
 
 Set execution privileges on sofabaton_control.py:
-'chmod +x sofabaton_control.py'
+`chmod +x sofabaton_control.py`
 
 Next, place the sofabaton_control.service into /lib/systemd/system.
 
@@ -100,15 +100,15 @@ User		# This should match your userid
 WorkingDirectory	# This should match your environment
 
 Next, setup a symbolic link:
-'sudo ln -s /lib/systemd/system/sofabaton_control.service /etc/systemd/system/sofabaton_control.service'
+`sudo ln -s /lib/systemd/system/sofabaton_control.service /etc/systemd/system/sofabaton_control.service`
 
 Then:
-'sudo systemctl daemon-reload'
-'sudo systemctl enable sofabaton_control.service'
-'sudo systemctl start sofabaton_control.service'
+`sudo systemctl daemon-reload`
+`sudo systemctl enable sofabaton_control.service`
+`sudo systemctl start sofabaton_control.service`
 
 Test:
-'sudo systemctl status sofabaton_control.service'
+`sudo systemctl status sofabaton_control.service`
 * Note: The following illustrates a working configuration.  If your service if not starting, then doublecheck the REMOTE_DEVICE entry and make sure you're pointing to the correct /dev/input/eventx device.
 
 jtburkh@blackacreTV:/etc/systemd/system $ sudo systemctl status sofabaton_control.service
