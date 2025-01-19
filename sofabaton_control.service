@@ -1,0 +1,17 @@
+[Unit]
+Description=Sofabaton Remote Control for FieldStation42
+After=bluetooth.target
+StartLimitInterval=300
+StartLimitBurst=5
+
+[Service]
+ExecStart=/usr/bin/python3 /home/jtburkh/sofabaton_control.py
+Restart=always
+RestartSec=5
+User=jtburkh
+WorkingDirectory=/home/jtburkh
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
