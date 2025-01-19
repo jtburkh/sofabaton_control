@@ -1,7 +1,7 @@
 # Sofabaton Control
 Python service for the Sofabaton U2 to provide a remote control interface into linux.
 
-* This was developed to provide an interface into the FieldStation42 project written by shane-mason (https://github.com/shane-mason/FieldStation42).
+* This was developed to provide an interface into the [FieldStation42](https://github.com/shane-mason/FieldStation42) project written by [shane-mason](https://github.com/shane-mason).
 * Its only function is to let the Sofabaton U2 use its bluetooth pairing to send button press codes to the linux system and write them to the channel.socket that FieldStation42 monitors for channel change inputs.
  
 ## Dependencies:
