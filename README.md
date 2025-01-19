@@ -22,7 +22,7 @@ Upon launching the SofaBaton app, it should prompt to specify which series of So
 
 Next, use the Add button and follow the prompts to add a device type.  I chose 'Bluetooth Keyboard'.  Continue to follow the prompts and complete the pairing process.
 
-On the Raspberry Pi OS, you can use the Bluetooth pairing UI to add the SofaBatonxxxxx device. During discovery, the Raspberry Pi OS detected my SofaBaron as SofaBaton05666.
+On the Raspberry Pi OS, you can use the Bluetooth pairing UI to add the SofaBatonxxxxx device. During discovery, the Raspberry Pi OS detected my SofaBaton as SofaBaton05666.
 
 
 
