@@ -102,8 +102,10 @@ The sofabaton_control.py can be run as a standalone utility from the command lin
 `python3 sofabaton_control.py`
 
 To integrate sofabaton_control.py into the OS to run you will need to tailor the sofabaton_control.py to fit your environment.  You will need to edit the following values in **sofabaton_control.py**:
+```bash
 **COMMAND_FILE**	# Point to the location of the file that you want to write key binds to, such as channel.lock on FieldStation42
 **REMOTE_DEVICE**	# See the section, "Discovering Bluetooth Button Press Codes" and supply the /dev/input/eventx number that is found on your system.
+```
 
 Set execution privileges on sofabaton_control.py:
 
