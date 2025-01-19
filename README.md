@@ -84,13 +84,13 @@ The following is a list of known codes and their respective device mapping:
 10	# 9 Button; /dev/input/event9
 11	# 0 Button; /dev/input/event9
 18	# E Button; /dev/input/event9
-```
 
 * Note: The following buttons are currently unknown:
 ???	# Channel Up; ???
 ???	# Channel Down; ???
 ???	# Info (i symbol inside circle); ???
 ???	# - (found to the left of 0 button); ???
+```
 
 These codes that are needed for channel input have been integrated into sofabaton_control.py.
 
