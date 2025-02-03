@@ -28,7 +28,7 @@ On the Raspberry Pi OS, you can use the Bluetooth pairing UI to add the SofaBato
 
 
 # Discovering Bluetooth Button Press Codes
-In this section, I'm providing directions on how to discover the key presses for a SofaBaton U2.  Technically this process should work with any bluetooth type of remote, but these directions only focus on the SofaBaton U2.
+In this section, I'm providing directions on how to discover the key presses for a SofaBaton U2.  You do not need to do anything in this section. I provide it here for those with intetest in discovering how the data flows from the remote to Linux.  Technically this process should work with any bluetooth type of remote, but these directions only focus on the SofaBaton U2.
 
 You will need the evtest package.
 
